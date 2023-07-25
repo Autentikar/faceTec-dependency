@@ -4,10 +4,10 @@
 import PackageDescription
 
 let package = Package(
-    name: "faceTec-dependency",
+    name: "FaceTecSDK",
     products: [
         .library(
-            name: "faceTec-dependency",
+            name: "FaceTecSDK",
             targets: ["FaceTecSDK"]),
     ],
     dependencies: [
