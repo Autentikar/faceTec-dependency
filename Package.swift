@@ -6,16 +6,17 @@ import PackageDescription
 let package = Package(
     name: "FaceTecSDK",
     products: [
-        .library(
-            name: "FaceTecSDK",
-            targets: ["FaceTecSDK"]),
-    ],
-    dependencies: [
+        .library(name: "FaceTecSDK",            targets: ["FaceTecSDK"]),
+        .library(name: "FaceTecSDKDevelopment", targets: ["FaceTecSDKDevelopment"]),
     ],
     targets: [
         .binaryTarget(
             name: "FaceTecSDK",
             path: "FaceTecSDK.xcframework"
-        )
+        ),
+        .binaryTarget(
+            name: "FaceTecSDKDevelopment",
+            path: "FaceTecSDKForDevelopment.xcframework"
+        ),
     ]
 )
